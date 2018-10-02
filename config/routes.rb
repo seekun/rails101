@@ -10,5 +10,8 @@ Rails.application.routes.draw do
   root 'groups#index'
   namespace :account do
     resources :groups
+    # resource :posts
+    # 报错, 找不到对应的method
+    resources :posts
   end
 end
